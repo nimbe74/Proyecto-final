@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería Bella Napoli</title>
+    <meta name="description" content="Pizzería Bella Napoli - pizzas artesanales con ingredientes frescos y recetas italianas.">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+        }
+        header {
+            background-color: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #b71c1c;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #ff7043;
+            border-radius: 5px;
+        }
+        .hero {
+            background-image: url('pizza-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            font-size: 32px;
+            text-align: center;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .pizza {
+            background: white;
+            width: 280px;
+            margin: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .pizza img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .pizza h3 {
+            margin: 10px 0;
+        }
+        .pizza p {
+            padding: 0 15px;
+        }
+        .button {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin: 15px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #b71c1c;
+        }
+        footer {
+            background-color: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍕 Pizzería Bella Napoli</h1>
+    <p>Auténtico sabor italiano</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#promos">Promociones</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<div class="hero" id="inicio">
+    ¡La mejor pizza artesanal de la ciudad!
+</div>
+
+<section id="menu">
+    <h2>Menú de Pizzas</h2>
+    <div class="menu">
+        <div class="pizza">
+            <img src="pizza marga.jpg" alt="Pizza Margarita">
+            <h3>Pizza Margarita</h3>
+            <p>Tomate, mozzarella fresca, albahaca y aceite de oliva.</p>
+            <button class="button">Ordenar</button>
+        </div>
+        <div class="pizza">
+            <img src="pizza pepperoni.jpg" alt="Pizza Pepperoni">
+            <h3>Pizza Pepperoni</h3>
+            <p>Queso mozzarella, salsa de tomate y pepperoni.</p>
+            <button class="button">Ordenar</button>
+        </div>
+        <div class="pizza">
+            <img src="pizza hawaiana.jpg" alt="Pizza Hawaiana">
+            <h3>Pizza Hawaiana</h3>
+            <p>Jamón, piña, queso mozzarella y salsa de tomate.</p>
+            <button class="button">Ordenar</button>
+        </div>
+    </div>
+</section>
+
+<section id="promos">
+    <h2>Promociones</h2>
+    <p>🎉 Martes 2x1 en pizzas grandes</p>
+    <p>🍺 Jueves: pizza + cerveza artesanal $199</p>
+</section>
+
+<section id="ubicacion">
+    <h2>Ubicación</h2>
+    <p>Calle Italia 45, Ciudad, País</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>📞 Tel: +52 123 456 789</p>
+    <p>📧 Email: contacto@bellanapoli.com</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Pizzería Bella Napoli - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Comida Italiana</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: url('https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      max-width: 550px;
+      margin: 80px auto;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0px 8px 25px rgba(0,0,0,0.3);
+      border: 2px solid #8B0000;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #8B0000;
+      margin-bottom: 25px;
+      font-family: 'Georgia', serif;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin: 15px 0 8px;
+      color: #333;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: 'Georgia', serif;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      width: 100%;
+      background: #8B0000;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 1.1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #A52A2A;
+      transform: scale(1.05);
+    }
+
+    .note {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 12px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>🍝 Encuesta de Comida Italiana</h2>
+    <form action="https://formspree.io/f/xpwlgwbk" method="POST">
+      <input type="hidden" name="_to" value="arellano.valentina1@icloud.com">
+
+      <label for="nombre">👩‍🍳 Tu nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ej. Valentina Arellano" required>
+
+      <label for="email">📧 Tu correo:</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+      <label for="italiano">🍕 ¿Cuál es tu platillo favorito de comida italiana?</label>
+      <input type="text" id="italiano" name="platillo_italiano" placeholder="Ej. Lasagna, pizza, risotto...">
+
+      <label for="plato">🍽️ Otro platillo que disfrutes:</label>
+      <input type="text" id="plato" name="plato_favorito" placeholder="Ej. Risotto de hongos">
+
+      <label for="ingrediente">🥬 Ingrediente italiano que nunca falta en tu cocina:</label>
+      <input type="text" id="ingrediente" name="ingrediente" placeholder="Ej. Aceite de oliva, albahaca">
+
+      <label for="mensaje">✍️ Comparte tu receta o experiencia italiana:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos tu secreto culinario..."></textarea>
+
+      <button type="submit">🍷 Enviar</button>
+    </form>
+    <p class="note">Grazie mille por compartir tu amor por la cucina italiana 🇮🇹❤️</p>
+  </div>
+
+</body>
+</html>

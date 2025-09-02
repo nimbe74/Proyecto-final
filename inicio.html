@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Nombre del Restaurante]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            background-image: url('restaurant-image.jpg'); /* Imagen principal del restaurante */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding-top: 150px;
+        }
+        .hero-image h2 {
+            font-size: 40px;
+            margin: 0;
+        }
+        .button {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>[Nombre del Restaurante]</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#about">Sobre Nosotros</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero-image">
+    <h2>Bienvenidos a [Nombre del Restaurante]</h2>
+    <a href="#reservas" class="button">Haz tu Reserva</a>
+</div>
+
+<section id="menu" class="section">
+    <h2>Menú</h2>
+    <p>Descubre nuestros platos italianos, preparados con los ingredientes más frescos y auténticos.</p>
+    <!-- Aquí agregarías tus platos con imágenes y descripciones -->
+</section>
+
+<section id="about" class="section">
+    <h2>Sobre Nosotros</h2>
+    <p>En [Nombre del Restaurante], combinamos la tradición italiana con la innovación moderna para brindarte una experiencia única.</p>
+</section>
+
+<section id="reservas" class="section">
+    <h2>Haz tu Reserva</h2>
+    <form>
+        <input type="text" placeholder="Nombre" required><br>
+        <input type="date" required><br>
+        <input type="time" required><br>
+        <input type="number" placeholder="Número de personas" required><br>
+        <button type="submit" class="button">Confirmar Reserva</button>
+    </form>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contacto</h2>
+    <p>Dirección: [Dirección del Restaurante]</p>
+    <p>Teléfono: [Número de Teléfono]</p>
+    <!-- Mapa interactivo aquí -->
+</section>
+
+<footer>
+    <p>&copy; 2025 [Nombre del Restaurante] | Todos los derechos reservados</p>
+    <a href="#">Facebook</a> | <a href="#">Instagram</a>
+</footer>
+
+</body>
+</html>

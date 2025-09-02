@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta Bella Vita</title>
+    <meta name="description" content="Pasta Bella Vita - pastas frescas hechas a mano, con auténtico sabor italiano.">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fffaf4;
+        }
+        header {
+            background-color: #8b4513;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #5a3220;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #d2691e;
+            border-radius: 5px;
+        }
+        .hero {
+            background-image: url('pasta-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            font-size: 32px;
+            text-align: center;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .plato {
+            background: white;
+            width: 280px;
+            margin: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .plato img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .plato h3 {
+            margin: 10px 0;
+        }
+        .plato p {
+            padding: 0 15px;
+        }
+        .button {
+            background-color: #8b4513;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin: 15px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #5a3220;
+        }
+        footer {
+            background-color: #8b4513;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍝 Pasta Bella Vita</h1>
+    <p>Pastas frescas hechas con amor</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#especiales">Especiales</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<div class="hero" id="inicio">
+    El auténtico sabor italiano en cada bocado
+</div>
+
+<section id="menu">
+    <h2>Menú de Pastas</h2>
+    <div class="menu">
+        <div class="plato">
+            <img src="pasta carbonara.jpg" alt="Pasta Carbonara">
+            <h3>Pasta Carbonara</h3>
+            <p>Espaguetis con panceta, huevo, queso pecorino y pimienta negra.</p>
+            <button class="button">Ordenar</button>
+        </div>
+        <div class="plato">
+            <img src="pasta boloñesa.jpg" alt="Pasta Boloñesa">
+            <h3>Pasta Boloñesa</h3>
+            <p>Tagliatelle con salsa de carne y tomate, receta tradicional.</p>
+            <button class="button">Ordenar</button>
+        </div>
+        <div class="plato">
+            <img src="pasta al pesto.jpg" alt="Pasta al Pesto">
+            <h3>Pasta al Pesto</h3>
+            <p>Trofie con albahaca fresca, piñones, queso parmesano y aceite de oliva.</p>
+            <button class="button">Ordenar</button>
+        </div>
+    </div>
+</section>
+
+<section id="especiales">
+    <h2>Especiales del Día</h2>
+    <p>🍷 Miércoles: pasta + copa de vino $180</p>
+    <p>🍮 Viernes: postre gratis en pastas grandes</p>
+</section>
+
+<section id="ubicacion">
+    <h2>Ubicación</h2>
+    <p>Via Italia 88, Ciudad, País</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>📞 Tel: +52 987 654 321</p>
+    <p>📧 Email: contacto@pastabellavita.com</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Pasta Bella Vita - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

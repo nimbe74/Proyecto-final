@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Tavola di Nonna</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #6c4f38;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            background-image: url('restaurant-interior.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding-top: 150px;
+        }
+        .hero-image h2 {
+            font-size: 40px;
+        }
+        .button {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .menu-links {
+            margin: 20px 0;
+        }
+        .menu-links a {
+            margin: 0 15px;
+            background-color: #ff5733;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+        }
+        .menu-links a:hover {
+            background-color: #e64e2a;
+        }
+        .postres-list {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .postre-item {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .postre-item img {
+            width: 100%;
+            border-radius: 10px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #6c4f38;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .map-container {
+            width: 100%;
+            height: 400px;
+            background-color: #ccc;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>La Tavola di Nonna</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#reseña">Reseña</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero-image">
+    <h2>La auténtica cocina italiana, con un toque moderno</h2>
+    <a href="#menu" class="button">Ver Menú</a>
+</div>
+
+<section id="menu">
+    <h2>Menú</h2>
+    <div class="menu-links">
+        <a href="file:///C:/Users/Sala%20de%20Computo%2003/Documents/iii/pizzas.html">Pizzas</a>
+        <a href="file:///C:/Users/Sala%20de%20Computo%2003/Documents/iii/pastas.html">Pastas</a>
+        <a href="file:///C:/Users/Sala%20de%20Computo%2003/Documents/iii/bebidas.html">Cócteles</a>
+        <a href="file:///C:/Users/Sala%20de%20Computo%2003/Documents/iii/postres.html">Postres</a>
+    </div>
+
+    <div class="postres-list">
+        <div class="postre-item">
+            <img src="tiramisu.jpg" alt="Tiramisú" />
+            <h3>Tiramisú</h3>
+            <p>Delicioso postre con capas de café, queso mascarpone y cacao.</p>
+        </div>
+        <div class="postre-item">
+            <img src="pannacotta.jpg" alt="Panna Cotta" />
+            <h3>Panna Cotta</h3>
+            <p>Postre cremoso hecho con nata, azúcar y gelatina, servido con frutos rojos.</p>
+        </div>
+        <div class="postre-item">
+            <img src="cannoli.jpg" alt="Cannoli" />
+            <h3>Cannoli</h3>
+            <p>Conos crujientes rellenos de crema dulce de ricotta.</p>
+        </div>
+    </div>
+</section>
+
+<section id="reseña">
+    <h2>Reseña</h2>
+    <p>"La Tavola di Nonna" fusiona la tradición italiana con un ambiente moderno y acogedor. Ven y disfruta de nuestra propuesta gastronómica única, hecha con amor y los mejores ingredientes. ¡Cada bocado te transportará directamente a Italia!</p>
+</section>
+
+<section id="ubicacion">
+    <h2>Ubicación</h2>
+    <div class="map-container">
+        <p>Dirección: Via Roma 123, Ciudad, País</p>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>Para más información, reservas o consultas, contáctanos a:</p>
+    <form>
+        <input type="text" placeholder="Nombre" required><br><br>
+        <input type="email" placeholder="Correo Electrónico" required><br><br>
+        <textarea placeholder="Mensaje" required></textarea><br><br>
+        <button type="submit" class="button">Enviar Mensaje</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 La Tavola di Nonna | Todos los derechos reservados</p>
+    <a href="#">Facebook</a> | <a href="#">Instagram</a>
+</footer>
+
+</body>
+</html>
